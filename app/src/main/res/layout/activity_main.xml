@@ -66,23 +66,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:padding="24dp"
         >
             <Button
                 android:id="@+id/buttonLogar"
                 android:layout_width="wrap_content"
+                android:layout_gravity="center"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="24dp"
-                android:layout_weight="10"
+                android:layout_weight="1"
                 android:text="Logar" />
 
-            <Button
-                android:id="@+id/buttonCadastrar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:text="Cadastrar" />
+
     </LinearLayout>
 
+    <TextView
+        android:layout_marginTop="32dp"
+        android:id="@+id/textViewCadastreSe"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CADASTRE-SE" />
 
 
 </LinearLayout>
