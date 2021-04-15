@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.estacio.app.model.Usuario;
+import com.estacio.app.utilities.TextMask;
 import com.estacio.app.utilities.ValidaCampos;
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -25,6 +28,7 @@ public class CadastroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
 
         inicializaComponentes();
+        validaCamposEMascaras();
         cadastrarUsuario();
 
 
@@ -42,6 +46,14 @@ public class CadastroActivity extends AppCompatActivity {
 
     }
 
+    public void validaCamposEMascaras(){
+        textInputLayoutDataNasc.getEditText().addTextChangedListener(TextMask.mask(textInputLayoutDataNasc.getEditText(),
+                TextMask.FORMAT_DATE));
+
+        textInputLayoutCelular.getEditText().addTextChangedListener(TextMask.mask(textInputLayoutCelular.getEditText(),
+                TextMask.FORMAT_FONE));
+    }
+
     public void cadastrarUsuario(){
 
 
@@ -54,6 +66,15 @@ public class CadastroActivity extends AppCompatActivity {
               }else{
                   textInputLayoutNome.setError("Nome necessário");
               }
+
+              Usuario novoUsuario = new Usuario();
+              novoUsuario.setNome(textInputLayoutNome.getEditText().getText().toString());
+              novoUsuario.setDataNasc(textInputLayoutDataNasc.getEditText().getText().toString());
+              novoUsuario.setCelular(textInputLayoutCelular.getEditText().getText().toString());
+              novoUsuario.setEmail(textInputLayoutEmail.getEditText().getText().toString());
+              novoUsuario.setSenha(textInputLayoutSenha.getEditText().getText().toString());
+
+
           }
       });
 

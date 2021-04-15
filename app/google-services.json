@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "345007383964",
+    "project_id": "app-estacio-2021",
+    "storage_bucket": "app-estacio-2021.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345007383964:android:a67869ef82e60382a25459",
+        "android_client_info": {
+          "package_name": "com.estacio.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "345007383964-27232jrsut82qch1lp97cfhukjfop7i9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.estacio.app",
+            "certificate_hash": "7704576f63f1b5ce1e096a39cd12a9b7846d4ce6"
+          }
+        },
+        {
+          "client_id": "345007383964-04160vkr69h8lj230fhu4nam8tf1u7k6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrC5NZ0hw1D67dd6Qmjt1c8VDWv0-CgQk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "345007383964-04160vkr69h8lj230fhu4nam8tf1u7k6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
