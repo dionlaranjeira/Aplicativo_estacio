@@ -41,17 +41,7 @@ public class CadastroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
         usuarios = banco.getReference("usuarios");
 
-//        autenticacao.signInWithEmailAndPassword("dionribeiro.rr@gmail.com","123456").
-//                addOnCompleteListener(CadastroActivity.this, new OnCompleteListener<AuthResult>() {
-//                    @Override
-//                    public void onComplete(@NonNull Task<AuthResult> task) {
-//                        if(task.isSuccessful()){
-//                            Toast.makeText(CadastroActivity.this, "Usuario logado com sucesso", Toast.LENGTH_LONG).show();
-//                        }else{
-//                            Toast.makeText(CadastroActivity.this, "Login ou senha invalido", Toast.LENGTH_LONG).show();
-//                        }
-//                    }
-//                });
+
 
 
         inicializaComponentes();
