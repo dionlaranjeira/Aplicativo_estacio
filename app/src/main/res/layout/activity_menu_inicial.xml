@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textSize="18dp"
         android:textAlignment="center"
-        android:text="TEMPLATE PERGUNTA"
+        android:text="Carregando pergunta..."
         android:gravity="center_horizontal" />
 
     <RadioGroup
@@ -26,25 +26,25 @@
             android:id="@+id/radioButtonA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Template A" />
+            android:text="Carregando..." />
 
         <RadioButton
             android:id="@+id/radioButtonB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Template B" />
+            android:text="Carregando..." />
 
         <RadioButton
             android:id="@+id/radioButtonC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Template C" />
+            android:text="Carregando..." />
 
         <RadioButton
             android:id="@+id/radioButtonD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Template D" />
+            android:text="Carregando..." />
 
 
     </RadioGroup>
